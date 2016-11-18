@@ -1,6 +1,6 @@
 # Symbiodinium_neglectomes
 
-This repository contains scripts used to assemble Symbiodinium chloroplast and mitochondrial DNA from cnidarian genome skimming data.  A general pipeline for this analysis is as follows:
+This repository contains scripts for assembling Symbiodinium chloroplast and mitochondrial DNA from cnidarian genome skimming data.  A general pipeline for this analysis is as follows:
 
 1. Quality filter reads with tool from Hannon lab FASTX-toolkit:
   ```fastq_quality_filter -Q 33 -q 20 -p 80 -i infile.fastq -o outfile.fastq```
