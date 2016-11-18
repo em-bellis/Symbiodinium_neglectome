@@ -1,8 +1,5 @@
 #!/bin/bash
 
-#first argument: barcode
-#usage
-
 cat R1.hq.fastq R2.hq.fastq > cat.fastq
 
 merge.pl cat.fastq merged.txt
