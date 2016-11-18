@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#shell script with ultimate goal of resorting quality-filtered data into forward, reverse, and single read fastq files for which pair was removed during quality filtering
+
 cat R1.hq.fastq R2.hq.fastq > cat.fastq
 
 merge.pl cat.fastq merged.txt
