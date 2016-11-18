@@ -14,3 +14,5 @@ This repository contains scripts for assembling Symbiodinium chloroplast and mit
 4. Extract unmapped reads: `samtools view -bf 4 aln.pe.sam >pe.unmap.bam`.  Mapped reads can be extracted with `-bF 4` instead of `-bf 4`.
 
 5. Convert unmapped reads from bam file to fastq with `bedtools bamToFastq`.
+
+6. Assemble unmapped reads: `SGE_Batch -c 'abyss-pe k=45 n=8 name=k45 lib="pe_300" pe_300="R1_unmap.fastq R2_unmap.fastq" se="singles_unmap.fastq" ' -r assm -f 24G -F 20G`
